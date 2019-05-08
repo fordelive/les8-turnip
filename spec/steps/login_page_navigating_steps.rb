@@ -3,7 +3,6 @@
 module LoginPageNavigating
   step 'User opens Home page' do
     HomePage.open
-    sleep 1
   end
 
   step 'User clicks Login menu item' do
