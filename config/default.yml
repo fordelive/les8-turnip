@@ -100,8 +100,8 @@
  mail_sleep_time: 3
 
 # -Mailgun- (http://www.mailgun.com/)
- mailgun_key: mailgun_account_private_key
- mailgun_domain: mailgun_domain_with_stored_method
+ mailgun_key: e566273b-3c7bb99e
+ mailgun_domain: sandbox65204cd72c394beeab09952d8bb2522b.mailgun.org
 
  # -Mailtrap- (https://mailtrap.io/)
  mailtrap_api_token: private_api_key
