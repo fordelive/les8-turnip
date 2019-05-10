@@ -96,12 +96,15 @@
 # MAIL SETTINGS                                           #
 ###########################################################
  mail_adapter: mailgun
- mail_wait_time: 60
+ mail_wait_time: 120
  mail_sleep_time: 3
 
 # -Mailgun- (http://www.mailgun.com/)
- mailgun_key: e566273b-3c7bb99e
- mailgun_domain: sandbox65204cd72c394beeab09952d8bb2522b.mailgun.org
+# mailgun_key: key-b5e7f2250f076f0dd3b93201f7614b75
+# mailgun_domain: sandbox65204cd72c394beeab09952d8bb2522b.mailgun.org
+
+ mailgun_key: key-e61dcac458b0480286cc6942a6cfbbab
+ mailgun_domain: sandbox17e2d93e4afe44ea889d89aadf6d413f.mailgun.org
 
  # -Mailtrap- (https://mailtrap.io/)
  mailtrap_api_token: private_api_key

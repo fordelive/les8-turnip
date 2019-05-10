@@ -4,10 +4,15 @@ class MainMenuSection < Howitzer::Web::Section
 
   element :log_in, :link, 'Login'
   element :log_out, :link, 'Logout'
+  element :sign_up, :link, 'Sign up'
 
   def login
     Howitzer::Log.info 'Log in'
     log_in_element.click
+  end
+
+  def logged_in?
+    log_out_element.visible?
   end
 
   def logout
@@ -15,11 +20,11 @@ class MainMenuSection < Howitzer::Web::Section
     log_out_element.click
   end
 
-  def login_successful?
-    log_out_element.visible?
+  def logged_out?
+    log_in_element.visible?
   end
 
-  def logout_successful?
-    log_in_element.visible?
+  def signup
+    sign_up_element.click
   end
 end

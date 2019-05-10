@@ -13,7 +13,7 @@ module UserLogin
   step 'Login should be :state' do |state|
     case state
     when 'successful'
-      HomePage.on { expect(main_menu_section).to be_login_successful }
+      HomePage.on { expect(main_menu_section).to be_logged_in }
     when 'failed'
       LoginPage.on { is_expected.to be_login_failed }
     end

@@ -4,7 +4,7 @@ module RememberMeSteps
     login_hash = { login: resolve_login(login), password: resolve_password(password), remember: 'checked'.match?(remember) }
     LoginPage.on { log_user_in(login_hash) }
 
-    HomePage.on { expect(main_menu_section).to be_login_successful }
+    HomePage.on { expect(main_menu_section).to be_logged_in }
   end
 
   step 'User reopens Home page with reopening browser' do
@@ -19,7 +19,7 @@ module RememberMeSteps
   end
 
   step 'User is logged in' do
-    HomePage.on { expect(main_menu_section).to be_login_successful }
+    HomePage.on { expect(main_menu_section).to be_logged_in }
   end
 
   step 'User logs out' do
@@ -27,7 +27,7 @@ module RememberMeSteps
   end
 
   step 'User is logged out' do
-    HomePage.on { expect(main_menu_section).to be_logout_successful }
+    HomePage.on { expect(main_menu_section).to be_logged_out }
   end
 end
 
