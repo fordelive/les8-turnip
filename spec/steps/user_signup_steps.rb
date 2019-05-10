@@ -57,6 +57,15 @@ module UserSignup
   step 'I see on login page notification that account was successfully confirmed' do
     LoginPage.on { expect(text).to include('Your account was successfully confirmed.') }
   end
+
+  step 'I fill and submit form on login page with correct data' do
+    login_hash = { login: @user.email, password: @user.password, remember: false }
+    LoginPage.on { log_user_in(login_hash) }
+  end
+
+  step 'I should be logged to the system' do
+    HomePage.on { expect(main_menu_section).to be_logged_in }
+  end
 end
 
 RSpec.configure { |c| c.include UserSignup }

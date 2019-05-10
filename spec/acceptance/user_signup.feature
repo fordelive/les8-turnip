@@ -13,9 +13,6 @@ Feature: User sign up
     And   I have received confirmation email
     When  I confirm account from confirmation email
     Then  I see on login page notification that account was successfully confirmed
-
-  Scenario: User logs in with submitted credentials
     When  I fill and submit form on login page with correct data
     Then  I should be logged to the system
-    And   I should be redirected to home page
 
