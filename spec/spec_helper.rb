@@ -62,3 +62,5 @@ RSpec::Core::ExampleGroup.instance_eval do
   end
 end
 require 'capybara-screenshot/rspec'
+
+require_relative '../prerequisites/helpers'

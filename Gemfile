@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'capybara-screenshot'
+gem 'byebug'
 gem 'factory_bot'
 gem 'howitzer'
 gem 'pry'

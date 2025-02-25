@@ -142,6 +142,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   capybara-screenshot
   factory_bot
   howitzer
